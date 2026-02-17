@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Spin & Earn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎡 Lucky Spin & Earn</h1>
+  <p class="subtitle">Join Telegram & Spin to Win Rewards</p>
+
+  <!-- Telegram Gate -->
+  <div id="telegramGate">
+    <h3>🔒 Join Telegram Channels</h3>
+    <a href="https://t.me/yourchannel1" target="_blank">Join Channel 1</a>
+    <a href="https://t.me/yourchannel2" target="_blank">Join Channel 2</a>
+    <a href="https://t.me/yourchannel3" target="_blank">Join Channel 3</a>
+    <button onclick="unlockSpin()">I Joined ✅</button>
+  </div>
+
+  <!-- Spin Section -->
+  <div id="spinSection" class="hidden">
+    <div class="wheel" id="wheel">SPIN</div>
+    <button onclick="spin()">Spin Now</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- Balance -->
+  <div class="balance">
+    💰 Balance: ₹<span id="balance">0</span>
+  </div>
+
+  <!-- Referral -->
+  <div class="referral">
+    <h3>👥 Refer & Earn</h3>
+    <p>1 Referral = 1 Spin</p>
+    <input type="text" id="refLink" readonly>
+    <button onclick="copyRef()">Copy Referral Link</button>
+    <p>Referral Spins: <span id="refSpins">0</span></p>
+  </div>
+
+  <!-- Withdraw -->
+  <div class="withdraw">
+    <h3>💸 Withdraw</h3>
+    <p>Minimum Withdrawal: ₹100</p>
+    <button onclick="withdraw()">Withdraw Now</button>
+    <p id="withdrawMsg"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
